@@ -8,5 +8,5 @@ func main() {
 	cards.saveToFile("my_cards")
 
 	loadedDeck := newDeckFromFile("my_cards")
-	fmt.Println(loadedDeck.toString())
+	loadedDeck.print()
 }
