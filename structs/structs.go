@@ -13,14 +13,19 @@ type person struct {
 	contact   contactInfo
 }
 
+func (p person) print() {
+	fmt.Printf("%+v", p)
+	fmt.Println()
+}
+
 func main() {
 	user1 := person{firstName: "Thiago", lastName: "Galvani", contact: contactInfo{email: "thiago@example.com", zipCode: 12345}}
-	fmt.Println(user1)
+	user1.print()
 
 	var user2 person
 	user2.firstName = "John"
 	user2.lastName = "Doe"
 	user2.contact.email = "john@example.com"
 	user2.contact.zipCode = 67890
-	fmt.Println(user2)
+	user2.print()
 }
