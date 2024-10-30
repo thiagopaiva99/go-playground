@@ -33,7 +33,6 @@ func main() {
 	user2.contact.zipCode = 67890
 	user2.print()
 
-	user2Pointer := &user2
-	user2Pointer.updateName("Jimmy")
+	user2.updateName("Jimmy")
 	user2.print()
 }
