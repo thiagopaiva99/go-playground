@@ -10,4 +10,9 @@ func main() {
 	}
 
 	fmt.Println(colors)
+
+	newColors := make(map[string]string)
+	newColors["white"] = "#ffffff"
+	fmt.Println(newColors)
+	delete(newColors, "white")
 }
